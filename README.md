@@ -7,3 +7,22 @@ There are many challenges to this: first, sleep is heavily "impaired" in this po
 
 [This is a first pass idea for now]
 
+###Ideas of things to look at :###
+- [] MOCA scores with % of N1/N2/N3/REM
+- [] UPDRS with % of N1/N2/N3/REM
+- [] sleep spindle density/amp with OSA episodes and MOCA
+- [] Medication and sleep spindle density/amp, OSA episodes
+- [] "derive" RBD diagnosis through threshold of EMG activity in REM
+
+###Things I want to make :###
+- [] topo map of EEG activity across sleep stages for each ppant (animated if possible)
+
+##but first... ##
+Need to:
+- remove artifacts (ICA needs a lot of electrodes (min 20) but regression approach requires less)
+    - https://cbrnr.github.io/2018/01/29/removing-eog-ica/
+    - https://cbrnr.github.io/2017/10/20/removing-eog-regression/
+
+- epoch in 30s bins? (would this be useful)
+- Would making a time-series df be useful??
+
