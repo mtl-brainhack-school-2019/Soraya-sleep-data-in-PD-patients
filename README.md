@@ -26,3 +26,12 @@ Need to:
 - epoch in 30s bins? (would this be useful)
 - Would making a time-series df be useful??
 
+### Some questions to explore? ###
+If PD is linked with OSA (through autonimic dysfunction, weakened muscle, sleep fragmentation...); 
+can there be a marker in the EMG activity of PD patients that predicts OSA severity???
+ -> maybe can compute heart rate variability and use that as marker of "weakened autonomic dysfunction"
+    refs: 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4083342/
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5437978/
+    https://link.springer.com/article/10.1007%2Fs11325-018-1729-0
+
