@@ -29,9 +29,12 @@ Need to:
 ### Some questions to explore? ###
 If PD is linked with OSA (through autonimic dysfunction, weakened muscle, sleep fragmentation...); 
 can there be a marker in the EMG activity of PD patients that predicts OSA severity???
- -> maybe can compute heart rate variability and use that as marker of "weakened autonomic dysfunction"
+-  maybe can compute heart rate variability and use that as marker of "weakened autonomic dysfunction"
+  
     refs: 
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4083342/
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5437978/
     https://link.springer.com/article/10.1007%2Fs11325-018-1729-0
 
+To calculate HR variability, need to compute diff freq bands of ECG:
+"Frequency bands were divided into very low frequency (0.003 to 0.04 Hz), low frequency (0.04 to 0.15 Hz), and high frequency (0.15 to 0.4 Hz) categories. The frequency domain parameters were VLF [%], LF [%], HF [%], LF/HF, LF [n.u.], HF [n.u.], VLF [abs], LF [abs], and HF [abs]." (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890801/)
