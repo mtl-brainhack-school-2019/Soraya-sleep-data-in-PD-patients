@@ -1,5 +1,5 @@
 # Predict Apnea-Hypopnoea index (AHI) in Parkinson's patients with obstructive sleep apnea #
-Obstructive sleep apnea (OSA) can be common in patients with Parkinson's disease (PD); it is thought that PD, through weakened muscle and autonomic dysfuntion, can lead to OSA. A marker of autonomic dysfunction often looked at is heart rate variability (HRV); I plan on computing this variable from sleep data and then use this variable to predict (probably through a linear regression) the severity of obstructive sleep apnea in the sample of patients I have. I have sleep recordings from ~20 PD patients, ranging in OSA severity.
+Obstructive sleep apnea (OSA) can be common in patients with Parkinson's disease (PD); it is thought that PD, through weakened muscle and autonomic dysfuntion, can lead to OSA. A marker of autonomic dysfunction often looked at is heart rate variability (HRV); I plan on computing this variable from sleep data and then use this variable to predict the severity of obstructive sleep apnea in the sample of patients I have. I have sleep recordings from ~20 PD patients, ranging in OSA severity.
 
 # List of things to do: #
 - [ ] Remove artifacts from sleep recording (visbrain sleep ?)
