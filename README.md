@@ -1,36 +1,20 @@
-## Predict sleep efficiency from PSG data of Parkinson's patients with obstructive sleep apnea ##
-I am not sure how to go about this, as this is a small and noisy dataset, but let's see what we can do. 
-Sleep efficiency is a variable that can be easily computed once PSG data has been scored by a technician,
-but as I don't have time to score all my data, I am hoping to use ML algorithm to score sleep (i.e., assign sleep stages; N1, N2, N3, REM) to then derive sleep efficiency. 
+# Predict Apnea-Hypopnoea index (AHI) in Parkinson's patients with obstructive sleep apnea #
+Obstructive sleep apnea (OSA) can be common in patients with Parkinson's disease (PD); it is thought that PD, through weakened muscle and autonomic dysfuntion, can lead to OSA. A marker of autonomic dysfunction often looked at is heart rate variability (HRV); I plan on computing this variable from sleep data and then use this variable to predict (probably through a linear regression) the severity of obstructive sleep apnea in the sample of patients I have. I have sleep recordings from ~20 PD patients, ranging in OSA severity.
 
-There are many challenges to this: first, sleep is heavily "impaired" in this population and individuals vary greatly from one another so it increasingly hard to draw patterns from the data. 
+# List of things to do: #
+- [ ] Remove artifacts from sleep recording (visbrain sleep ?)
+- [ ] Compute HRV with python:
+    - [ ] Process the signal and divide low frequency band and high frequency band
+- [ ] Try diff supervised algorithms and see which best match the variable (is the relationship linear or not? is there even a relationship...)
 
-[This is a first pass idea for now]
+- [ ] I also want to make some nice visualizations; topo maps across sleep stages of EEG activity (frontal, central, occipital) with apnea episodes
 
-### Ideas of things to look at : ###
-- [ ] MOCA scores with % of N1/N2/N3/REM
-- [ ] UPDRS with % of N1/N2/N3/REM
-- [ ] sleep spindle density/amp with OSA episodes and MOCA
-- [ ] Medication and sleep spindle density/amp, OSA episodes
-- [ ] "derive" RBD diagnosis through threshold of EMG activity in REM
+## Some issues/Questions i have for myself: ##
+- I have many hours of recording (~7hours), where do I sample my signal from? Do I average the whole 7 hours? What about different sleep stages??? Do i sample diff time points (early night, mid night, late night)
 
-### Things I want to make : ###
-- [ ] topo map of EEG activity across sleep stages for each ppant (animated if possible)
+I also want to look at more...brain data, but because of the time constraint i am not sure if that is possible (noisy signal and not a lot of active electrodes). 
 
-## but first... ##
-Need to:
-- remove artifacts (ICA needs a lot of electrodes (min 20channels) but regression approach requires less)
-    - https://cbrnr.github.io/2018/01/29/removing-eog-ica/
-    - https://cbrnr.github.io/2017/10/20/removing-eog-regression/
-
-- epoch in 30s bins? (would this be useful)
-- Would making a time-series df be useful??
-
-### Some questions to explore? ###
-If PD is linked with OSA (through autonimic dysfunction, weakened muscle, sleep fragmentation...); 
-can there be a marker in the EMG activity of PD patients that predicts OSA severity???
--  maybe can compute heart rate variability and use that as marker of "weakened autonomic dysfunction"
-  
+### Some references and info for myself ###
     refs: 
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4083342/
     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5437978/
