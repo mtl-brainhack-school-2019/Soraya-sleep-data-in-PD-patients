@@ -22,6 +22,8 @@ I am currently a 2nd year Master's student based at the MNI and I study memory i
 - Visualization:
     - Plot topo-map of the EEG signal
         - Compute the power spectral density
+        - Would like to make figures like [Fig. 1B and 1D](https://www.cell.com/neuron/pdfExtended/S0896-6273(17)31073-5)
+        ![Verynicefig](images/Fig_from_walker.jpg)
 - If time permits, compute additional variables from the signal:
     - E.g., Use the ECG signal to compute heart rate variability
         - Use this to predict the severity of obstructive sleep apnea
