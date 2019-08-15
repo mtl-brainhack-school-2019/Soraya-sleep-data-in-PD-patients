@@ -14,19 +14,22 @@ I am currently a 2nd year Master's student based at the MNI and I study memory i
 ------
 #### Objectives  ##
 - Pre-process PSG data:
-    - Exclude artifacts (e.g., power line drifts in the signal)
+    - Use ICA to exclude artifacts
 - Detection of sleep spindles using MNE
+- Attempt sleep spindle localization (but I don't think i have enough electrodes for this)
+- Divide data into sleep stages:
+    - Will have to do this manually... or scrap PDF patient files with the sleep stage information
 - Visualization:
-        - Plot topo-map of the EEG signal
-        - Computer the power spectral density
-        - Make animated plot of signal through time for different frequency bands _(I know this is possible with R, but i dont know about python)_
+    - Plot topo-map of the EEG signal
+        - Compute the power spectral density
 - If time permits, compute additional variables from the signal:
-        - Use the ECG signal to compute heart rate variability
-        - Use this variable to predict the severity of obstructive sleep apnea
+    - E.g., Use the ECG signal to compute heart rate variability
+        - Use this to predict the severity of obstructive sleep apnea
 #### Output:
 - Binder of Jupyter notebooks with:
-    a. pre-processing  scripts
-    b. visualization scripts
+    - pre-processing  scripts
+         * Output some processed data
+    - Visualization scripts using processed data output
 
 #### Tools
 * MNE
