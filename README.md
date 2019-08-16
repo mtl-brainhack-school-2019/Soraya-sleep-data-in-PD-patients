@@ -6,11 +6,11 @@ I am currently a 2nd year Master's student based at the MNI and I study memory i
     with different severity of obstructive sleep apnea. PSG data contains:
     6 EEG channels (2 Frontal, 2 Central, 2 Occipital), 
     3 EMG channels (Chin, Right Leg, Left Leg), 
-    2 EOG (Right eye, Left eye), 
+    2 EOG (Right eye, Left eye), ECG, 
     audio of snoring, and pulse oximetry (SaO2) measuring oxygen saturation. 
     Recording are nights sleep of around 8 hours for each participants.
 
-## Brainhack 2019 ##
+## Brainhack 2019 
 ------
 ### Objectives   :date:
 **For one patient:**
