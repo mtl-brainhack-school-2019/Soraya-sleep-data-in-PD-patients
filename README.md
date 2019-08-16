@@ -17,8 +17,8 @@ I am currently a 2nd year Master's student based at the MNI and I study memory i
 - [ ] Pre-process PSG data:
     - [X] Fit ICA
     - [ ] Use ICA to exclude artifacts
-- [ ] Detection of sleep spindles using MNE
-- [ ] Detection of Slow Oscillations using MNE
+- [ ] Detection of sleep spindles using visbrain or MNE
+- [ ] Detection of Slow Oscillations using visbrai or MNE
 - Attempt sleep spindle localization (but I don't think i have enough electrodes for this)
 - [ ] Divide data into sleep stages:
     - Will have to do this manually... or scrap PDF patient files with the sleep stage information
